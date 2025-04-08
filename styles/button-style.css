@@ -1,0 +1,68 @@
+.btn-circle {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(249, 249, 249);
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    transition: transform 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+/* Ikona wewnątrz przycisku */
+.btn-circle img {
+    width: 46px;
+    height: 46px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* Efekt rozlania z gradientem */
+.btn-circle::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: radial-gradient(circle, rgb(0, 123, 255), rgb(255, 107, 107));
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+
+    /* 🌈 Rozmycie + łagodna animacja */
+    filter: blur(12px);
+    opacity: 0.6;
+    transition: width 1s ease, height 1s ease;
+}
+
+/* Po najechaniu: rozlanie tła */
+.btn-circle:hover::before {
+    width: 300%;
+    height: 300%;
+    opacity: 0.7;
+}
+
+/* Lekka animacja kliknięcia */
+.btn-circle:active {
+    transform: scale(0.95);
+}
+@media (max-width: 768px) {
+    .btn-circle {
+        width: 60px;
+        height: 60px;
+    }
+
+    .btn-circle img {
+        width: 36px;
+        height: 36px;
+    }
+
+}
