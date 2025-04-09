@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(249, 249, 249);
+    background-color: rgb(43, 43, 51);
     font-family: Consolas;
 
 
@@ -32,7 +32,7 @@ p{
     box-sizing: border-box;
 }
 .name-photo{
-    background-color: rgb(44, 44, 44);
+    /*background-color: rgb(44, 44, 44);*/
     display: flex;
     width: 100%;
     aspect-ratio: 3/1;
@@ -154,11 +154,17 @@ p{
     margin-bottom: 20px;
 
 }
+.mobile-only {
+    display: none;
+}
 
 
 
 
 @media (max-width: 768px) {
+    body{
+        color: rgb(230, 230, 230);
+    }
     .name-photo {
         flex-direction: column;
 
@@ -179,42 +185,47 @@ p{
     }
     h1{
         font-size: 20px;
-        background-color: rgb(237, 237, 237);
-        padding-left: 20px;
-        border-radius: 20px 20px 20px 20px;
+        color: white;
+        /*background-color: rgb(237, 237, 237);*/
+        /*padding-left: 20px;*/
+        /*border-radius: 20px 20px 20px 20px;*/
     }
     h2{
         font-size: 18px;
+        color: white;
     }
     .about-me{
         margin-bottom: 0;
         border-radius: 0;
-        background-color:rgb(249, 249, 249);
+        background-color: rgb(43, 43, 51);
     }
     .skills{
         margin-bottom: 0;
         border-radius: 0;
-        background-color:rgb(249, 249, 249);
+        background-color: rgb(43, 43, 51);
     }
     .experience{
         margin-bottom: 0;
         border-radius: 0;
-        background-color:rgb(249, 249, 249);
+        background-color: rgb(43, 43, 51);
     }
     .school{
         margin-bottom: 0;
         border-radius: 0;
-        background-color:rgb(249, 249, 249);
+        background-color: rgb(43, 43, 51);
     }
     .projects{
         margin-bottom: 0;
         border-radius: 0;
-        background-color:rgb(249, 249, 249);
+        background-color: rgb(43, 43, 51);
     }
     .courses{
         margin-bottom: 0;
         border-radius: 0;
-        background-color:rgb(249, 249, 249);
+        background-color: rgb(43, 43, 51);
+    }
+    .mobile-only {
+        display: block;
     }
 }
 
