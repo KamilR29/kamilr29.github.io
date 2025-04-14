@@ -1,6 +1,6 @@
 body{
     background-color: rgb(43, 43, 51);
-    font-family: Consolas, Menlo, Monaco, monospace;
+    font-family: Consolas;
     margin: 0;
     padding: 0;
     padding-top: 60px;
@@ -234,6 +234,10 @@ h1 .icon {
 @media (max-width: 768px) {
     body{
         color: rgb(230, 230, 230);
+        font-family: lato;
+    }
+    .name-text{
+        font-family: Consolas, Menlo, Monaco, monospace;
     }
     .name-photo {
         flex-direction: column;
@@ -256,11 +260,13 @@ h1 .icon {
     h1{
         font-size: 20px;
         color: white;
+        font-family: Consolas, Menlo, Monaco, monospace;
         /*background-color: rgb(237, 237, 237);*/
         /*padding-left: 20px;*/
         /*border-radius: 20px 20px 20px 20px;*/
     }
     h2{
+        font-family: Consolas, Menlo, Monaco, monospace;
         font-size: 18px;
         color: white;
     }
