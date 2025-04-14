@@ -1,6 +1,6 @@
 body{
     background-color: rgb(43, 43, 51);
-    font-family: Consolas;
+    font-family: Consolas, Menlo, Monaco, monospace;
     margin: 0;
     padding: 0;
     padding-top: 60px;
