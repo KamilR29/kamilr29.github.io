@@ -160,6 +160,9 @@ p{
 .mobile-only {
     display: none;
 }
+.mobile-only-fat{
+    display: none;
+}
 
 /*-----------------------*/
 header {
@@ -302,6 +305,17 @@ h1 .icon {
     }
     .mobile-only {
         display: block;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border: none;
+        margin: 0;
+    }
+    .mobile-only-fat{
+        display: block;
+        height: 4px;
+        background-color: rgba(255, 255, 255, 0.3);
+        border: none;
+        margin: 0;
     }
     /*-----------------*/
     header{
@@ -352,6 +366,9 @@ h1 .icon {
         width: 36px;         /* szerokość ikony */
         height: 36px;        /* wysokość ikony */
         object-fit: contain; /* zachowaj proporcje */
+    }
+    html {
+        scroll-padding-top: 10px; /* dopasuj do wysokości menu */
     }
 
 }
