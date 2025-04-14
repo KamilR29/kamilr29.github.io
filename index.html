@@ -9,9 +9,30 @@
     <link rel="stylesheet" href="styles/button-style.css">
 </head>
 <body>
+<header>
+    <nav class="navbar">
+        <div class="logo">Portfolio</div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <img src="images/hamburger.png" alt="Menu" />
+        </label>
+        <ul class="menu">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#school">School</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#courses">Courses</a></li>
+        </ul>
+    </nav>
+</header>
     <div class="main">
         <div class="name-photo">
+            <div class="photo">
+                <img src="images/0V0A84013.jpg" class="circle-img">
+            </div>
             <div class="name">
+
                 <div class="name-text">
                     <p class="kamil">Kamil Rączkowski</p>
                 </div>
@@ -29,13 +50,11 @@
 
                 </div>
             </div>
-            <div class="photo">
-                <img src="images/0V0A84013.jpg" class="circle-img">
-            </div>
+
         </div>
         <div class="text">
-            <div class="about-me">
-                <h1>About Me</h1>
+            <div class="about-me" id="about">
+                <h1><img src="images/folder.png" alt="About Icon" class="icon">About Me</h1>
                 <p>I am a fourth-year Computer Science
                     student specializing in AI Systems. Through my studies,
                     online courses, and self-directed efforts, I continuously
@@ -44,8 +63,8 @@
                     reliability in completing assigned tasks.</p>
             </div>
             <hr class="mobile-only"/>
-            <div class="skills">
-                <h1>Skills</h1>
+            <div class="skills" id="skills">
+                <h1> <img src="images/folder.png" alt="About Icon" class="icon">Skills</h1>
                 <h2>Programming Languages</h2>
                 <ul>
                     <li>Python</li>
@@ -130,8 +149,8 @@
 
             </div>
             <hr class="mobile-only"/>
-            <div class="experience">
-                <h1>Experience</h1>
+            <div class="experience" id="experience">
+                <h1> <img src="images/folder.png" alt="About Icon" class="icon">Experience</h1>
                 <h2>QA Specialist - Manual Tester</h2>
                 <ul>
                     <li>Designing and executing manual tests for web and mobile applications.</li>
@@ -149,8 +168,8 @@
                 </ul>
             </div>
             <hr class="mobile-only"/>
-            <div class="school">
-                <h1>School</h1>
+            <div class="school" id="school">
+                <h1> <img src="images/folder.png" alt="About Icon" class="icon">School</h1>
                 <h2>Polish-Japanese Academy of Information Technology</h2>
                 <ul>
                     <li><strong>Education Level:</strong> Master Degree </li>
@@ -165,12 +184,62 @@
 
             </div>
             <hr class="mobile-only"/>
-            <div class="projects">
-                <h1>Projects</h1>
+            <div class="projects" id="projects">
+                <h1><img src="images/folder.png" alt="About Icon" class="icon">Projects</h1>
+                <h2>Multi-Agent Recruitment System</h2>
+                <ul>
+                    <li>
+                        AI-powered recruitment analysis system built with:
+                        <ul>
+                            <li>Python: LangGraph, LangChain</li>
+                            <li>LLM: OpenAI API</li>
+                            <li>Frontend: Streamlit</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h2>House Price Prediction</h2>
+                <ul>
+                    <li>
+                        Machine Learning model to predict house prices using:
+                        <ul>
+                            <li>Technologies: Python, TensorFlow, scikit-learn</li>
+                            <li>DevOps: GitHub Actions, Docker</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h2>Energy Forecast</h2>
+                <ul>
+                    <li>
+                        AI-based energy consumption prediction using:
+                        <ul>
+                            <li>Machine Learning: Python, AutoGluon</li>
+                            <li>Frontend: Streamlit</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h2>Flight Booking Application</h2>
+                <ul>
+                    <li>
+                        Full-stack web application for booking flights:
+                        <ul>
+                            <li>Backend: Java (Spring Boot), MySQL</li>
+                            <li>Frontend: React</li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
             <hr class="mobile-only"/>
-            <div class="courses">
-                <h1>Courses</h1>
+            <div class="courses" id="courses">
+                <h1><img src="images/folder.png" alt="About Icon" class="icon">Courses</h1>
+                <ul>
+                    <li>ChatGPT Prompt Engineering for Developers – DeepLearning.AI</li>
+                    <li>Building Systems with the ChatGPT API – DeepLearning.AI</li>
+                    <li>AI Agents in LangGraph – DeepLearning.AI</li>
+                    <li>Introduction to LangGraph – LangChain Academy</li>
+                    <li>Automated Testing for LLMOps – DeepLearning.AI</li>
+                    <li>Spring Boot & Spring Framework – <em>Udemy, in progress</em></li>
+                    <li>Advanced React & Next.js – <em>Udemy, in progress</em></li>
+                </ul>
             </div>
 
 
@@ -178,7 +247,13 @@
 
     </div>
 
-
+<script>
+    document.querySelectorAll('.menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            document.getElementById('menu-toggle').checked = false;
+        });
+    });
+</script>
 
 
 </body>
