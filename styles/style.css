@@ -11,10 +11,12 @@ h1{
     margin-left: 20px;
 
 
+
 }
 h2{
     margin-left: 20px;
-    color: rgb(64, 64, 64) ;
+    /*color: rgb(64, 64, 64) ;*/
+    color: #ce9178;
 
 }
 p{
@@ -92,7 +94,10 @@ p{
 .about-me{
     width: 100%;
     height: auto;
-    background-color: rgb(237, 237, 237);
+    /*background-color: rgb(237, 237, 237);*/
+    background-color: #1e1e1e; /* Ciemny jak terminal VSCode */
+    color: #d4d4d4;            /* Szary jak tekst w edytorze */
+    border: 1px solid #3c3c3c;
     border-radius: 20px 20px 20px 20px;
     padding-top: 1px;
     padding-bottom: 1px;
@@ -105,7 +110,9 @@ p{
 .skills{
     width: 100%;
     height: auto;
-    background-color: rgb(237, 237, 237);
+    background-color: #1e1e1e; /* Ciemny jak terminal VSCode */
+    color: #d4d4d4;            /* Szary jak tekst w edytorze */
+    border: 1px solid #3c3c3c;
     border-radius: 20px 20px 20px 20px;
 
     padding-top: 1px;
@@ -116,7 +123,9 @@ p{
 .experience{
     width: 100%;
     height: auto;
-    background-color: rgb(237, 237, 237);
+    background-color: #1e1e1e; /* Ciemny jak terminal VSCode */
+    color: #d4d4d4;            /* Szary jak tekst w edytorze */
+    border: 1px solid #3c3c3c;
     border-radius: 20px 20px 20px 20px;
 
     padding-top: 1px;
@@ -127,7 +136,9 @@ p{
 .school{
     width: 100%;
     height: auto;
-    background-color: rgb(237, 237, 237);
+    background-color: #1e1e1e; /* Ciemny jak terminal VSCode */
+    color: #d4d4d4;            /* Szary jak tekst w edytorze */
+    border: 1px solid #3c3c3c;
     border-radius: 20px 20px 20px 20px;
 
     padding-top: 1px;
@@ -138,7 +149,9 @@ p{
 .projects{
     width: 100%;
     height: auto;
-    background-color: rgb(237, 237, 237);
+    background-color: #1e1e1e; /* Ciemny jak terminal VSCode */
+    color: #d4d4d4;            /* Szary jak tekst w edytorze */
+    border: 1px solid #3c3c3c;
     border-radius: 20px 20px 20px 20px;
 
     padding-top: 1px;
@@ -149,7 +162,9 @@ p{
 .courses{
     width: 100%;
     height: auto;
-    background-color: rgb(237, 237, 237);
+    background-color: #1e1e1e; /* Ciemny jak terminal VSCode */
+    color: #d4d4d4;            /* Szary jak tekst w edytorze */
+    border: 1px solid #3c3c3c;
     border-radius: 20px 20px 20px 20px;
 
     padding-top: 1px;
@@ -167,8 +182,10 @@ p{
 /*-----------------------*/
 header {
     width: 100%;
-    background-color: rgb(17, 16, 33);
-    color: white;
+    /*background-color: rgb(17, 16, 33);*/
+    /*color: white;*/
+    background-color: #0d1117;
+    color: #c9d1d9;
     position: fixed;
     top: 0;
     left: 0;
@@ -271,37 +288,44 @@ h1 .icon {
     h2{
         font-family: Consolas, Menlo, Monaco, monospace;
         font-size: 18px;
-        color: white;
+        /*color: white;*/
+        color: #ce9178;
     }
     .about-me{
         margin-bottom: 0;
         border-radius: 0;
         background-color: rgb(43, 43, 51);
+        border: none;
     }
     .skills{
         margin-bottom: 0;
         border-radius: 0;
         background-color: rgb(43, 43, 51);
+        border: none;
     }
     .experience{
         margin-bottom: 0;
         border-radius: 0;
         background-color: rgb(43, 43, 51);
+        border: none;
     }
     .school{
         margin-bottom: 0;
         border-radius: 0;
         background-color: rgb(43, 43, 51);
+        border: none;
     }
     .projects{
         margin-bottom: 0;
         border-radius: 0;
         background-color: rgb(43, 43, 51);
+        border: none;
     }
     .courses{
         margin-bottom: 0;
         border-radius: 0;
         background-color: rgb(43, 43, 51);
+        border: none;
     }
     .mobile-only {
         display: block;
@@ -335,7 +359,8 @@ h1 .icon {
         left: 0;
         width: 100vw;
         height: 100vh;
-        background-color: rgb(17, 16, 33);
+        background-color: #0d1117;
+        color: #c9d1d9;
         display: none;
         flex-direction: column;
         justify-content: center;
