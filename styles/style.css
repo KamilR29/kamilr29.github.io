@@ -1,4 +1,4 @@
-body{
+body {
     background-color: rgb(43, 43, 51);
     font-family: Consolas;
     margin: 0;
@@ -7,28 +7,30 @@ body{
 
 
 }
-h1{
-    margin-left: 20px;
 
+h1 {
+    margin-left: 20px;
 
 
 }
-h2{
+
+h2 {
     margin-left: 20px;
-    /*color: rgb(64, 64, 64) ;*/
     color: #ce9178;
 
 }
-p{
+
+p {
     margin-left: 20px;
 }
 
-.kamil{
-    font-size: 40px;
+.kamil {
+    font-size: 50px;
     color: white;
 
 
 }
+
 .main {
     margin: 0 auto;
     width: 100%;
@@ -36,8 +38,9 @@ p{
     padding: 0 15px;
     box-sizing: border-box;
 }
-.name-photo{
-    /*background-color: rgb(44, 44, 44);*/
+
+.name-photo {
+
     display: flex;
     width: 100%;
     aspect-ratio: 3/1;
@@ -45,18 +48,20 @@ p{
     margin-bottom: 20px;
 
 }
-.name{
-    /*background-color: darkgray;*/
+
+.name {
+
     width: 60%;
 
-
 }
-.photo{
-    /*background-color: blueviolet;*/
+
+.photo {
+
     width: 40%;
 
 }
-.circle-img{
+
+.circle-img {
     width: 70%;
     aspect-ratio: 1/1;
     object-fit: cover;
@@ -68,22 +73,23 @@ p{
 
 
 }
-.text{
-    /*background-color: beige;*/
+
+.text {
+
     width: 100%;
     height: 500px;
 
 }
-.social-media{
+
+.social-media {
     width: 100%;
     display: flex;
     justify-content: center;
 
 
-
-
 }
-.name-text{
+
+.name-text {
     width: 100%;
     height: 40%;
     display: flex;
@@ -91,28 +97,32 @@ p{
 
 
 }
-.about-me{
+
+.about-me {
     width: 100%;
     height: auto;
     /*background-color: rgb(237, 237, 237);*/
-    background-color: #1e1e1e; /* Ciemny jak terminal VSCode */
-    color: #d4d4d4;            /* Szary jak tekst w edytorze */
-    border: 1px solid #3c3c3c;
+    /*background-color: #1e1e1e;*/
+    background-color: rgb(43, 43, 51);
+    color: #d4d4d4;
+    /*border: 2px solid #3c3c3c;*/
+    border: 2px solid #e6e7e8;
     border-radius: 20px 20px 20px 20px;
     padding-top: 1px;
     padding-bottom: 1px;
     margin-bottom: 20px;
 
 
-
-
 }
-.skills{
+
+.skills {
     width: 100%;
     height: auto;
-    background-color: #1e1e1e; /* Ciemny jak terminal VSCode */
-    color: #d4d4d4;            /* Szary jak tekst w edytorze */
-    border: 1px solid #3c3c3c;
+    /*background-color: #1e1e1e;*/
+    background-color: rgb(43, 43, 51);
+    color: #d4d4d4;
+    /*border: 1px solid #3c3c3c;*/
+    border: 2px solid #e6e7e8;
     border-radius: 20px 20px 20px 20px;
 
     padding-top: 1px;
@@ -120,12 +130,15 @@ p{
     margin-bottom: 20px;
 
 }
-.experience{
+
+.experience {
     width: 100%;
     height: auto;
-    background-color: #1e1e1e; /* Ciemny jak terminal VSCode */
-    color: #d4d4d4;            /* Szary jak tekst w edytorze */
-    border: 1px solid #3c3c3c;
+    /*background-color: #1e1e1e; */
+    background-color: rgb(43, 43, 51);
+    color: #d4d4d4;
+    /*border: 1px solid #3c3c3c;*/
+    border: 2px solid #e6e7e8;
     border-radius: 20px 20px 20px 20px;
 
     padding-top: 1px;
@@ -133,12 +146,15 @@ p{
     margin-bottom: 20px;
 
 }
-.school{
+
+.school {
     width: 100%;
     height: auto;
-    background-color: #1e1e1e; /* Ciemny jak terminal VSCode */
-    color: #d4d4d4;            /* Szary jak tekst w edytorze */
-    border: 1px solid #3c3c3c;
+    /*background-color: #1e1e1e; */
+    background-color: rgb(43, 43, 51);
+    color: #d4d4d4;
+    /*border: 1px solid #3c3c3c;*/
+    border: 2px solid #e6e7e8;
     border-radius: 20px 20px 20px 20px;
 
     padding-top: 1px;
@@ -146,12 +162,15 @@ p{
     margin-bottom: 20px;
 
 }
-.projects{
+
+.projects {
     width: 100%;
     height: auto;
-    background-color: #1e1e1e; /* Ciemny jak terminal VSCode */
-    color: #d4d4d4;            /* Szary jak tekst w edytorze */
-    border: 1px solid #3c3c3c;
+    /*background-color: #1e1e1e;*/
+    background-color: rgb(43, 43, 51);
+    color: #d4d4d4;
+    /*border: 1px solid #3c3c3c;*/
+    border: 2px solid #e6e7e8;
     border-radius: 20px 20px 20px 20px;
 
     padding-top: 1px;
@@ -159,12 +178,15 @@ p{
     margin-bottom: 20px;
 
 }
-.courses{
+
+.courses {
     width: 100%;
     height: auto;
-    background-color: #1e1e1e; /* Ciemny jak terminal VSCode */
-    color: #d4d4d4;            /* Szary jak tekst w edytorze */
-    border: 1px solid #3c3c3c;
+    /*background-color: #1e1e1e;*/
+    background-color: rgb(43, 43, 51);
+    color: #d4d4d4;
+    /*border: 1px solid #3c3c3c;*/
+    border: 2px solid #e6e7e8;
     border-radius: 20px 20px 20px 20px;
 
     padding-top: 1px;
@@ -172,14 +194,16 @@ p{
     margin-bottom: 20px;
 
 }
+
 .mobile-only {
     display: none;
 }
-.mobile-only-fat{
+
+.mobile-only-fat {
     display: none;
 }
 
-/*-----------------------*/
+
 header {
     width: 100%;
     /*background-color: rgb(17, 16, 33);*/
@@ -193,6 +217,7 @@ header {
     margin: 0;
     padding: 0;
 }
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -228,7 +253,7 @@ header {
     color: #00bfff;
 }
 
-/* Hamburger */
+
 .hamburger {
     display: none;
     font-size: 30px;
@@ -238,165 +263,21 @@ header {
 #menu-toggle {
     display: none;
 }
+
 html {
-    scroll-padding-top: 60px; /* dopasuj do wysokości menu */
+    scroll-padding-top: 60px;
 }
+
 h1 .icon {
-    width: 36px;          /* szerokość */
-    height: 36px;         /* wysokość */
-    margin-right: 10px;   /* odstęp od tekstu */
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
     vertical-align: middle;
-    object-fit: contain;  /* zachowaj proporcje */
+    object-fit: contain;
 }
 
 
 
-@media (max-width: 768px) {
-    body{
-        color: rgb(230, 230, 230);
-        font-family: lato;
-    }
-    .name-text{
-        font-family: Consolas, Menlo, Monaco, monospace;
-    }
-    .name-photo {
-        flex-direction: column;
-
-    }
-
-    .name, .photo {
-        width: 100%;
-    }
-
-    .circle-img {
-        margin: 20px auto;
-        max-width: 150px;
-        width: 100%;
-
-    }
-    .kamil{
-        font-size: 30px;
-    }
-    h1{
-        font-size: 20px;
-        color: white;
-        font-family: Consolas, Menlo, Monaco, monospace;
-        /*background-color: rgb(237, 237, 237);*/
-        /*padding-left: 20px;*/
-        /*border-radius: 20px 20px 20px 20px;*/
-    }
-    h2{
-        font-family: Consolas, Menlo, Monaco, monospace;
-        font-size: 18px;
-        /*color: white;*/
-        color: #ce9178;
-    }
-    .about-me{
-        margin-bottom: 0;
-        border-radius: 0;
-        background-color: rgb(43, 43, 51);
-        border: none;
-    }
-    .skills{
-        margin-bottom: 0;
-        border-radius: 0;
-        background-color: rgb(43, 43, 51);
-        border: none;
-    }
-    .experience{
-        margin-bottom: 0;
-        border-radius: 0;
-        background-color: rgb(43, 43, 51);
-        border: none;
-    }
-    .school{
-        margin-bottom: 0;
-        border-radius: 0;
-        background-color: rgb(43, 43, 51);
-        border: none;
-    }
-    .projects{
-        margin-bottom: 0;
-        border-radius: 0;
-        background-color: rgb(43, 43, 51);
-        border: none;
-    }
-    .courses{
-        margin-bottom: 0;
-        border-radius: 0;
-        background-color: rgb(43, 43, 51);
-        border: none;
-    }
-    .mobile-only {
-        display: block;
-        height: 1px;
-        background-color: rgba(255, 255, 255, 0.5);
-        border: none;
-        margin: 0;
-    }
-    .mobile-only-fat{
-        display: block;
-        height: 4px;
-        background-color: rgba(255, 255, 255, 0.3);
-        border: none;
-        margin: 0;
-    }
-    /*-----------------*/
-    header{
-        background-color: transparent;
-    }
-    .logo{
-        display: none;
-    }
-    .navbar{
-        padding-right: 20px;
-
-
-    }
-    .menu {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: #0d1117;
-        color: #c9d1d9;
-        display: none;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        gap: 30px;
-        z-index: 998;
-        padding: 0;
-
-    }
-    .menu li {
-        padding: 10px 0;
-    }
-
-    #menu-toggle:checked + .hamburger + .menu {
-        display: flex;
-    }
-
-    .hamburger {
-        display: block;
-        font-size: 30px;
-        cursor: pointer;
-        z-index: 999;
-        position: relative;
-        margin-left: auto;
-    }
-    .hamburger img {
-        width: 36px;         /* szerokość ikony */
-        height: 36px;        /* wysokość ikony */
-        object-fit: contain; /* zachowaj proporcje */
-    }
-    html {
-        scroll-padding-top: 10px; /* dopasuj do wysokości menu */
-    }
-
-}
 
 
 
