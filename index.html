@@ -1,267 +1,382 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kamil Rączkowski</title>
+    <meta name="description" content="Kamil Rączkowski — Junior Test Automation & GenAI Engineer. Portfolio, experience, skills and projects.">
+    <title>Kamil Rączkowski — Portfolio</title>
     <link rel="icon" href="images/page-icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/mobile-style.css">
-    <link rel="stylesheet" href="styles/button-style.css">
 </head>
 <body>
-<header>
-    <nav class="navbar">
-        <div class="logo">Portfolio</div>
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="hamburger">
-            <img src="images/hamburger.png" alt="Menu"/>
-        </label>
-        <ul class="menu">
-            <li><a href="#about">AboutMe</a></li>
+
+<!-- ===== Navbar ===== -->
+<header class="navbar" id="navbar">
+    <a href="#hero" class="brand">
+        <span class="brand-bracket">&lt;</span>KR<span class="brand-bracket">/&gt;</span>
+    </a>
+
+    <nav>
+        <ul class="menu" id="menu">
+            <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">Experience</a></li>
-            <li><a href="#school">School</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#courses">Courses</a></li>
         </ul>
     </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+    </button>
 </header>
-<div class="main">
-    <div class="name-photo">
-        <div class="photo">
-            <img src="images/profile.png" class="circle-img">
-        </div>
-        <div class="name">
 
-            <div class="name-text">
-                <p class="kamil">Kamil&nbsp;Rączkowski</p>
+<!-- ===== Hero ===== -->
+<section class="hero" id="hero">
+    <div class="hero-inner">
+        <div class="hero-text reveal">
+            <p class="hero-eyebrow">Hi, my name is</p>
+            <h1 class="hero-name">Kamil Rączkowski</h1>
+            <h2 class="hero-role">Junior Test Automation &amp; GenAI Engineer</h2>
+            <p class="hero-desc">
+                I build AI-based testing solutions and AI-powered projects, combining quality
+                engineering with modern AI tooling — with a strong focus on clean code,
+                reliability and continuous learning.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#experience" class="btn btn-primary">My experience</a>
+                <a href="#projects" class="btn btn-ghost">View my work</a>
             </div>
+
             <div class="social-media">
-                <a></a>
-                <a href="https://github.com/KamilR29" target="_blank" class="btn-circle">
-                    <img src="images/github.png" alt="github">
+                <a href="https://github.com/KamilR29" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.57.1.78-.25.78-.55v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.72-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.74.8 1.18 1.82 1.18 3.08 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.07.78 2.16v3.2c0 .31.2.66.79.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
                 </a>
-                <a href="https://www.linkedin.com/in/kamil-r%C4%85czkowski-056600192/" target="_blank"
-                   class="btn-circle">
-                    <img src="images/linkedin.png" alt="linkedin">
+                <a href="https://www.linkedin.com/in/kamil-r%C4%85czkowski-056600192/" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05a3.75 3.75 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.55V9h3.57v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
                 </a>
-                <a href="mailto:kamil.rac29@gmail.com" target="_blank" class="btn-circle">
-                    <img src="images/gmail.png" alt="gmail">
+                <a href="mailto:kamil.rac29@gmail.com" class="social-btn" aria-label="Email">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
                 </a>
-                <a href="https://www.linkedin.com/company/dsc-pjatk/posts/?feedView=all" target="_blank"
-                   class="btn-circle">
-                    <img src="images/data-science.png" alt="data science club">
+                <a href="https://www.linkedin.com/company/dsc-pjatk/posts/?feedView=all" target="_blank" rel="noopener" class="social-btn" aria-label="Data Science Club PJATK">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg>
                 </a>
-
             </div>
         </div>
 
-    </div>
-    <div class="text">
-        <hr class="mobile-only-fat"/>
-        <div class="about-me" id="about">
-            <h1><img src="images/folder.png" alt="About Icon" class="icon">About Me</h1>
-            <hr class="mobile-only"/>
-            <p>I am a Data Science
-                student specializing in AI Systems. Through my studies,
-                online courses, and self-directed efforts, I continuously
-                acquire knowledge and improve my ability to write clean and
-                efficient code. In my work, I prioritize diligence and
-                reliability in completing assigned tasks.</p>
+        <div class="hero-photo reveal">
+            <div class="photo-ring">
+                <img src="images/profile.png" alt="Kamil Rączkowski" class="circle-img">
+            </div>
         </div>
-        <hr class="mobile-only-fat"/>
-        <div class="skills" id="skills">
-            <h1><img src="images/folder.png" alt="About Icon" class="icon">Skills</h1>
-            <hr class="mobile-only"/>
-            <h2>Programming Languages</h2>
-            <ul>
-                <li>Python</li>
-                <li>Java (Java SE, Java EE)</li>
-            </ul>
-            <h2>Frameworks</h2>
-            <ul>
-                <li>Spring (Spring Boot, Spring MVC, Spring Data)</li>
-                <li>Hibernate / JPA</li>
-                <li>TensorFlow</li>
-                <li>scikit-learn</li>
-                <li>LangGraph</li>
-                <li>NumPy</li>
-                <li>Pandas</li>
-                <li>Matplotlib</li>
-            </ul>
-            <h2>Services</h2>
-            <ul>
-                <li>RESTful API</li>
-                <li>Google Cloud Platform (GCP)</li>
-            </ul>
-            <h2>Testing</h2>
-            <ul>
-                <li>Unit Testing</li>
-                <li>Integration Testing</li>
-                <li>JUnit</li>
-            </ul>
-            <h2>Build Tools</h2>
-            <ul>
-                <li>Maven</li>
-                <li>Gradle</li>
-            </ul>
-            <h2>IDE</h2>
-            <ul>
-                <li>PyCharm</li>
-                <li>IntelliJ IDEA</li>
-            </ul>
-            <h2>Version Control</h2>
-            <ul>
-                <li>Git</li>
-                <li>GitHub</li>
-            </ul>
-            <h2>Databases</h2>
-            <ul>
-                <li>MySQL</li>
-                <li>PostgreSQL</li>
-            </ul>
-            <h2>Containerization</h2>
-            <ul>
-                <li>Docker</li>
-            </ul>
-            <h2>CI/CD</h2>
-            <ul>
-                <li>GitHub Actions</li>
-                <li>Terraform</li>
-                <li>Apache Airflow</li>
-            </ul>
-            <h2>Frontend Technologies</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-            </ul>
-            <h2>Work Methodologies and Tools</h2>
-            <ul>
-                <li>Agile / Scrum</li>
-                <li>Jira</li>
-                <li>CI/CD Pipelines</li>
-                <li>Confluence</li>
-            </ul>
-            <h2>Programming Skills and Techniques</h2>
-            <ul>
-                <li>Object-Oriented Programming (OOP)</li>
-                <li>Clean Code</li>
-                <li>SOLID Principles</li>
-                <li>Design Patterns</li>
-                <li>Algorithms and Data Structures</li>
-                <li>Microservices Architecture</li>
-            </ul>
-
-
-        </div>
-        <hr class="mobile-only-fat"/>
-        <div class="experience" id="experience">
-            <h1><img src="images/folder.png" alt="About Icon" class="icon">Experience</h1>
-            <hr class="mobile-only"/>
-            <h2>QA Specialist - Manual Tester</h2>
-            <ul>
-                <li>Designing and executing manual tests for web and mobile applications.</li>
-                <li>Creating test scenarios and test cases based on business requirements.</li>
-                <li>Reporting defects using bug tracking systems (e.g., JIRA).</li>
-                <li>Collaborating with development teams and analysts to improve product quality.</li>
-                <li>Preparing test documentation and participating in project meetings (Scrum).</li>
-            </ul>
-            <h2>Digital Content Coordinator</h2>
-            <ul>
-                <li>Managing and updating website content using CMS platforms (OCM, Semrush).</li>
-                <li>Collaborating with marketing and IT teams to optimize content for SEO and UX.</li>
-                <li>Ensuring content accuracy and compliance with company guidelines.</li>
-                <li>Troubleshooting technical issues and making adjustments in HTML/CSS code.</li>
-            </ul>
-        </div>
-        <hr class="mobile-only-fat"/>
-        <div class="school" id="school">
-            <h1><img src="images/folder.png" alt="About Icon" class="icon">School</h1>
-            <hr class="mobile-only"/>
-            <h2>Polish-Japanese Academy of Information Technology</h2>
-            <ul>
-                <li><strong>Education Level:</strong> Master Degree</li>
-                <li><strong>Field of Study:</strong> Data Science</li>
-            </ul>
-
-            <h2>Polish-Japanese Academy of Information Technology</h2>
-            <ul>
-                <li><strong>Education Level:</strong> Bachelors Degree</li>
-                <li><strong>Field of Study:</strong> Computer Science</li>
-            </ul>
-
-        </div>
-        <hr class="mobile-only-fat"/>
-        <div class="projects" id="projects">
-            <h1><img src="images/folder.png" alt="About Icon" class="icon">Projects</h1>
-            <hr class="mobile-only"/>
-            <h2>Multi-Agent Recruitment System</h2>
-            <ul>
-                <li>
-                    AI-powered recruitment analysis system built with:
-                    <ul>
-                        <li>Python: LangGraph, LangChain</li>
-                        <li>LLM: OpenAI API</li>
-                        <li>Frontend: Streamlit</li>
-                    </ul>
-                </li>
-            </ul>
-            <h2>House Price Prediction</h2>
-            <ul>
-                <li>
-                    Machine Learning model to predict house prices using:
-                    <ul>
-                        <li>Technologies: Python, TensorFlow, scikit-learn</li>
-                        <li>DevOps: GitHub Actions, Docker</li>
-                    </ul>
-                </li>
-            </ul>
-            <h2>Energy Forecast</h2>
-            <ul>
-                <li>
-                    AI-based energy consumption prediction using:
-                    <ul>
-                        <li>Machine Learning: Python, AutoGluon</li>
-                        <li>Frontend: Streamlit</li>
-                    </ul>
-                </li>
-            </ul>
-            <h2>Flight Booking Application</h2>
-            <ul>
-                <li>
-                    Full-stack web application for booking flights:
-                    <ul>
-                        <li>Backend: Java (Spring Boot), MySQL</li>
-                        <li>Frontend: React</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <hr class="mobile-only-fat"/>
-        <div class="courses" id="courses">
-            <h1><img src="images/folder.png" alt="About Icon" class="icon">Courses</h1>
-            <hr class="mobile-only"/>
-            <ul>
-                <li>ChatGPT Prompt Engineering for Developers – DeepLearning.AI</li>
-                <li>Building Systems with the ChatGPT API – DeepLearning.AI</li>
-                <li>AI Agents in LangGraph – DeepLearning.AI</li>
-                <li>Introduction to LangGraph – LangChain Academy</li>
-                <li>Automated Testing for LLMOps – DeepLearning.AI</li>
-                <li>Spring Boot & Spring Framework – <em>Udemy, in progress</em></li>
-                <li>Advanced React & Next.js – <em>Udemy, in progress</em></li>
-            </ul>
-        </div>
-
-
     </div>
 
-</div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll down">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+    </a>
+</section>
 
-<script src="scripts/menu-script.js"></script>
+<main class="container">
 
+    <!-- ===== About ===== -->
+    <section class="section reveal" id="about">
+        <h2 class="section-title"><span class="section-index">01.</span> About Me</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>
+                    I am a <strong>Junior Test Automation &amp; GenAI Engineer</strong>. In my work, I focus
+                    on building AI-based testing solutions and other AI-related projects, combining
+                    quality engineering with modern AI tooling.
+                </p>
+                <p>
+                    I completed my engineering degree in Data Science with a specialization in AI systems,
+                    and I am currently finishing my master's degree in the same field. Through my studies,
+                    online courses and self-directed projects, I continuously expand my knowledge and sharpen
+                    my ability to write clean and efficient code. In my work I value diligence, reliability
+                    and delivering results I can stand behind.
+                </p>
+            </div>
+            <ul class="about-facts">
+                <li><span class="fact-label">Role</span><span class="fact-value">Test Automation &amp; GenAI Engineer</span></li>
+                <li><span class="fact-label">Focus</span><span class="fact-value">AI Systems · QA · Backend</span></li>
+                <li><span class="fact-label">Education</span><span class="fact-value">MSc Informatics (in progress)</span></li>
+                <li><span class="fact-label">Location</span><span class="fact-value">Warsaw, Poland</span></li>
+            </ul>
+        </div>
+    </section>
 
+    <!-- ===== Skills ===== -->
+    <section class="section reveal" id="skills">
+        <h2 class="section-title"><span class="section-index">02.</span> Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Languages</h3>
+                <div class="tags">
+                    <span>Python</span><span>Java</span><span>SQL</span><span>Cypher</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3>Agent Frameworks / LLM</h3>
+                <div class="tags">
+                    <span>LangChain</span><span>LangGraph</span><span>AutoGen</span><span>MS Agent Framework</span><span>Deep Agents</span><span>Claude Code</span><span>GPT</span><span>Gemini</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3>AI / ML</h3>
+                <div class="tags">
+                    <span>TensorFlow</span><span>scikit-learn</span><span>LangGraph</span><span>LangChain</span><span>NumPy</span><span>Pandas</span><span>Matplotlib</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3>Backend &amp; Frontend</h3>
+                <div class="tags">
+                    <span>Spring Boot</span><span>Flask</span><span>FastAPI</span><span>RESTful API</span><span>React</span><span>Streamlit</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3>Testing &amp; QA</h3>
+                <div class="tags">
+                    <span>Unit Testing</span><span>Integration Testing</span><span>JUnit</span><span>pytest</span><span>Manual Testing</span><span>Selenium / Playwright</span><span>Jenkins</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3>DevOps &amp; Cloud</h3>
+                <div class="tags">
+                    <span>Docker</span><span>GitHub Actions</span><span>AWS</span><span>GCP</span><span>Azure</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3>Databases</h3>
+                <div class="tags">
+                    <span>MySQL</span><span>PostgreSQL</span><span>Neo4j</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3>Tools &amp; Methods</h3>
+                <div class="tags">
+                    <span>Git</span><span>GitHub</span><span>GitLab</span><span>Agile / Scrum</span><span>Jira</span><span>Confluence</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3>Engineering Principles</h3>
+                <div class="tags">
+                    <span>OOP</span><span>Clean Code</span><span>SOLID</span><span>Design Patterns</span><span>Algorithms &amp; Data Structures</span><span>Microservices</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Experience ===== -->
+    <section class="section reveal" id="experience">
+        <h2 class="section-title"><span class="section-index">03.</span> Experience</h2>
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <span class="tl-period">Feb 2026 — Present</span>
+                    <h3 class="tl-role">Junior Test Automation &amp; GenAI Engineer</h3>
+                    <p class="tl-company">Accenture · Full-time · Warsaw, Poland</p>
+                    <ul>
+                        <li>Building and maintaining automated test suites for enterprise applications.</li>
+                        <li>Developing GenAI-powered tooling to accelerate testing and delivery.</li>
+                        <li>Collaborating with cross-functional teams to raise product quality.</li>
+                    </ul>
+                    <div class="tags tags-sm">
+                        <span>Agent Frameworks / LLM</span><span>Python</span><span>Testing &amp; QA</span><span>DevOps</span><span>Claude Code</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <span class="tl-period">Jun 2025 — Jan 2026</span>
+                    <h3 class="tl-role">Junior Software Engineer</h3>
+                    <p class="tl-company">BlockWise · Full-time · Warsaw, Poland · On-site</p>
+                    <ul>
+                        <li>Developed software features across AI/ML and backend components.</li>
+                        <li>Worked primarily with Python and applied AI/ML techniques.</li>
+                    </ul>
+                    <div class="tags tags-sm">
+                        <span>AI/ML</span><span>Python</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <span class="tl-period">Mar 2025 — Present</span>
+                    <h3 class="tl-role">Member</h3>
+                    <p class="tl-company">Data Science Club PJATK · Warsaw, Poland</p>
+                    <ul>
+                        <li>Participating in data science and AI initiatives within the student community.</li>
+                    </ul>
+                    <div class="tags tags-sm">
+                        <span>AI/ML</span><span>Python</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <span class="tl-period">Apr 2023 — May 2025 · 2 yrs 2 mos</span>
+                    <h3 class="tl-role">Ingersoll Rand</h3>
+                    <p class="tl-company">Warsaw, Poland</p>
+
+                    <div class="sub-role">
+                        <span class="tl-period">Apr 2024 — May 2025 · Hybrid</span>
+                        <h4>Junior Test Engineer</h4>
+                        <ul>
+                            <li>Designed and executed manual tests for web and mobile applications.</li>
+                            <li>Created test scenarios and cases based on business requirements.</li>
+                            <li>Reported defects and collaborated with dev teams to improve quality.</li>
+                        </ul>
+                        <div class="tags tags-sm">
+                            <span>Manual Testing</span><span>Test Automation Basics</span>
+                        </div>
+                    </div>
+
+                    <div class="sub-role">
+                        <span class="tl-period">Jul 2023 — Apr 2024</span>
+                        <h4>Content Management Specialist</h4>
+                        <ul>
+                            <li>Managed and updated website content using CMS platforms (OCM, Semrush).</li>
+                            <li>Optimized content for SEO and UX with marketing and IT teams.</li>
+                            <li>Troubleshot technical issues, adjusting HTML/CSS as needed.</li>
+                        </ul>
+                        <div class="tags tags-sm">
+                            <span>Oracle Content Management</span><span>JIRA</span>
+                        </div>
+                    </div>
+
+                    <div class="sub-role">
+                        <span class="tl-period">Apr 2023 — Apr 2024 · Hybrid</span>
+                        <h4>Content Management Intern</h4>
+                        <ul>
+                            <li>Supported digital content operations and day-to-day CMS tasks.</li>
+                        </ul>
+                        <div class="tags tags-sm">
+                            <span>Oracle Content Management</span><span>JIRA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== Education ===== -->
+    <section class="section reveal" id="education">
+        <h2 class="section-title"><span class="section-index">04.</span> Education</h2>
+        <div class="edu-grid">
+            <div class="edu-card">
+                <span class="edu-period">Feb 2025 — Present</span>
+                <h3>Master's Degree (MSc)</h3>
+                <p class="edu-field">Informatics</p>
+                <p class="edu-school">Polish-Japanese Academy of Information Technology, Warsaw</p>
+            </div>
+            <div class="edu-card">
+                <span class="edu-period">Oct 2021 — Feb 2025</span>
+                <h3>Engineer's Degree (BEng)</h3>
+                <p class="edu-field">Computer Science</p>
+                <p class="edu-school">Polish-Japanese Academy of Information Technology, Warsaw</p>
+                <div class="tags tags-sm">
+                    <span>API</span><span>C#</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section class="section reveal" id="projects">
+        <h2 class="section-title"><span class="section-index">05.</span> Projects</h2>
+        <div class="projects-grid">
+            <article class="project-card">
+                <div class="project-top">
+                    <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7V4h16v3"/><path d="M9 20h6"/><path d="M12 4v16"/></svg>
+                </div>
+                <h3>Multi-Agent Recruitment System</h3>
+                <p>AI-powered recruitment analysis system orchestrating multiple agents to evaluate candidates.</p>
+                <div class="tags tags-sm">
+                    <span>LangGraph</span><span>LangChain</span><span>OpenAI API</span><span>Streamlit</span>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-top">
+                    <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 4-4 4 4 5-6"/></svg>
+                </div>
+                <h3>House Price Prediction</h3>
+                <p>Machine learning model predicting house prices, packaged with a full CI/CD pipeline.</p>
+                <div class="tags tags-sm">
+                    <span>Python</span><span>TensorFlow</span><span>scikit-learn</span><span>GitHub Actions</span><span>Docker</span>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-top">
+                    <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg>
+                </div>
+                <h3>Energy Forecast</h3>
+                <p>AI-based energy consumption prediction with an interactive front-end dashboard.</p>
+                <div class="tags tags-sm">
+                    <span>Python</span><span>AutoGluon</span><span>Streamlit</span>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-top">
+                    <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2Z"/></svg>
+                </div>
+                <h3>Flight Booking Application</h3>
+                <p>Full-stack web application for searching and booking flights end to end.</p>
+                <div class="tags tags-sm">
+                    <span>Java</span><span>Spring Boot</span><span>MySQL</span><span>React</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- ===== Courses ===== -->
+    <section class="section reveal" id="courses">
+        <h2 class="section-title"><span class="section-index">06.</span> Courses &amp; Certifications</h2>
+        <ul class="courses-list">
+            <li><span class="course-name">ChatGPT Prompt Engineering for Developers</span><span class="course-org">DeepLearning.AI</span></li>
+            <li><span class="course-name">Building Systems with the ChatGPT API</span><span class="course-org">DeepLearning.AI</span></li>
+            <li><span class="course-name">AI Agents in LangGraph</span><span class="course-org">DeepLearning.AI</span></li>
+            <li><span class="course-name">Introduction to LangGraph</span><span class="course-org">LangChain Academy</span></li>
+            <li><span class="course-name">Automated Testing for LLMOps</span><span class="course-org">DeepLearning.AI</span></li>
+            <li><span class="course-name">Spring Boot &amp; Spring Framework</span><span class="course-org">Udemy · in progress</span></li>
+            <li><span class="course-name">Advanced React &amp; Next.js</span><span class="course-org">Udemy · in progress</span></li>
+        </ul>
+    </section>
+
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+    <div class="footer-social">
+        <a href="https://github.com/KamilR29" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.57.1.78-.25.78-.55v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.72-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.74.8 1.18 1.82 1.18 3.08 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.07.78 2.16v3.2c0 .31.2.66.79.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/kamil-r%C4%85czkowski-056600192/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05a3.75 3.75 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.55V9h3.57v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+        </a>
+        <a href="mailto:kamil.rac29@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+        </a>
+    </div>
+    <p class="footer-text">Designed &amp; built by Kamil Rączkowski · © <span id="year"></span></p>
+</footer>
+
+<script src="scripts/main.js"></script>
 </body>
 </html>
