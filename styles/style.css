@@ -252,16 +252,19 @@ a { color: inherit; text-decoration: none; }
     background: var(--gradient);
     box-shadow: 0 30px 70px -30px rgba(94, 211, 244, .5);
 }
-.photo-ring::after {
-    content: '';
+/* Interactive graph mesh orbiting the photo (drawn in scripts/main.js) */
+.photo-graph {
     position: absolute;
-    inset: -14px;
-    border-radius: 50%;
-    border: 1px dashed rgba(167, 139, 250, .35);
-    animation: spin 22s linear infinite;
+    top: -26%;
+    left: -26%;
+    width: 152%;
+    height: 152%;
+    z-index: 0;
+    pointer-events: none;
 }
-@keyframes spin { to { transform: rotate(360deg); } }
 .circle-img {
+    position: relative;
+    z-index: 1;
     width: 100%; height: 100%;
     border-radius: 50%;
     object-fit: cover;
