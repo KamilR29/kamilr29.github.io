@@ -71,10 +71,12 @@ if (graphCanvas && graphCanvas.getContext) {
 
     const NODE_COUNT = 54;
     const R_MIN = 0.70;                       // inner radius, fraction of the canvas half-size
-    const R_MAX = 0.98;
+    const R_MAX = 0.92;
     const LINK_DIST = 0.30;                   // neighbours closer than this get an edge
     const MAX_DEGREE = 4;
     const POINTER_RADIUS = 140;               // px of influence around the cursor
+    const PUSH = 1.7;
+    const MAX_OFFSET = 0.055;                 // cap on how far a node leaves home, in half-sizes
     const SPRING = 0.02;
     const DAMPING = 0.88;
 
@@ -149,7 +151,7 @@ if (graphCanvas && graphCanvas.getContext) {
         }
     }
 
-    let w = 0, h = 0, cx = 0, cy = 0, half = 0, placed = false, running = false;
+    let w = 0, h = 0, cx = 0, cy = 0, half = 0, maxOffset = 0, placed = false, running = false;
     const pointer = { x: 0, y: 0, active: false };
 
     const updateHomes = (t) => {
@@ -174,6 +176,7 @@ if (graphCanvas && graphCanvas.getContext) {
         cx = w / 2;
         cy = h / 2;
         half = Math.min(w, h) / 2;
+        maxOffset = half * MAX_OFFSET;
         updateHomes(0);
         if (!placed) {
             nodes.forEach(n => { n.x = n.hx; n.y = n.hy; n.vx = n.vy = 0; });
@@ -194,8 +197,8 @@ if (graphCanvas && graphCanvas.getContext) {
                 const d = Math.hypot(dx, dy) || 0.001;
                 if (d < POINTER_RADIUS) {
                     const push = (1 - d / POINTER_RADIUS) ** 2;
-                    n.vx += (dx / d) * push * 2.6;
-                    n.vy += (dy / d) * push * 2.6;
+                    n.vx += (dx / d) * push * PUSH;
+                    n.vy += (dy / d) * push * PUSH;
                     target = 1 - d / POINTER_RADIUS;
                 }
             }
@@ -205,6 +208,18 @@ if (graphCanvas && graphCanvas.getContext) {
             n.vy *= DAMPING;
             n.x += n.vx;
             n.y += n.vy;
+
+            // Keep every node on a short leash so none is flung off the canvas
+            const ox = n.x - n.hx;
+            const oy = n.y - n.hy;
+            const off = Math.hypot(ox, oy);
+            if (off > maxOffset) {
+                const k = maxOffset / off;
+                n.x = n.hx + ox * k;
+                n.y = n.hy + oy * k;
+                n.vx *= 0.5;
+                n.vy *= 0.5;
+            }
         }
     };
 

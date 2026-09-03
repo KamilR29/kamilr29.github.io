@@ -261,6 +261,9 @@ a { color: inherit; text-decoration: none; }
     height: 152%;
     z-index: 0;
     pointer-events: none;
+    /* Fade the outer band so nothing ever cuts off on the canvas edge */
+    -webkit-mask-image: radial-gradient(circle at center, #000 72%, transparent 97%);
+    mask-image: radial-gradient(circle at center, #000 72%, transparent 97%);
 }
 .circle-img {
     position: relative;
